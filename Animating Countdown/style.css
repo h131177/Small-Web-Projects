@@ -1,0 +1,28 @@
+body {
+    background: #282e3a;
+    font-family: tahoma;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 74px;
+    letter-spacing: 10px;
+}
+
+#del-countdown {
+    width: 850px;
+    margin: 15% auto;
+}
+
+#clock span {
+    float: left;
+    text-align: center;
+    font-size: 84px;
+    margin: 0 2.5%;
+    color: #fff;
+    padding: 20px;
+    width: 20%;
+    border-radius: 28px;
+    box-sizing: border-box;
+}
