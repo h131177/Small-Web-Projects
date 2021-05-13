@@ -60,3 +60,14 @@ h1 {
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.7);
 }
+
+span.turn {
+    animation: turn 0.7s ease forwards;
+}
+
+@keyframes turn {
+    0%{transform: rotateX(0deg)}
+    100%{transform: rotateX(360deg)}
+}
+
+
