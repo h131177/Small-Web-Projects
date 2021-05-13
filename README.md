@@ -2,6 +2,9 @@
 
 Will add small projects and examples here.
 
+You can view them here:
+https://h131177.github.io/Small-Web-Projects/
+
 List:
 
 Animating Countdown: 
