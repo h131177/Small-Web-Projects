@@ -1,5 +1,9 @@
 # Small-Web-Projects
 
+Will add small projects and examples here.
+
+List:
+
 Animating Countdown: 
 
 Followed The Net Ninja tutorial on youtube:
