@@ -9,6 +9,13 @@ function updateTimer(deadline) {
     };
 }
 
+function animateClock(span) {
+    span.className = "turn";
+    setTimeout(function() {
+        span.className = "";
+    }, 700);
+}
+
 function startTimer(id, deadline) {
     const timerInterval = setInterval(function () {
         const clock = document.getElementById(id);
@@ -18,6 +25,13 @@ function startTimer(id, deadline) {
                         + '<span>' + timer.hours + '</span>'
                         + '<span>' + timer.minutes + '</span>'
                         + '<span>' + timer.seconds + '</span>';
+        
+        //animations
+        const spans = clock.getElementsByTagName("span");
+        animateClock(spans[3]);
+        if(timer.seconds == 59) animateClock(spans[2]);
+        if(timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
+        if(timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59) animateClock(spans[0]);
 
         //check for end of timer
         if(timer.total < 1) {
