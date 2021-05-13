@@ -10,7 +10,7 @@ function updateTimer(deadline) {
 }
 
 function startTimer(id, deadline) {
-    const timeInterval = setInterval(function () {
+    const timerInterval = setInterval(function () {
         const clock = document.getElementById(id);
         const timer = updateTimer(deadline);
 
@@ -18,6 +18,12 @@ function startTimer(id, deadline) {
                         + '<span>' + timer.hours + '</span>'
                         + '<span>' + timer.minutes + '</span>'
                         + '<span>' + timer.seconds + '</span>';
+
+        //check for end of timer
+        if(timer.total < 1) {
+            clearInterval(timerInterval);
+            clock.innerHTML = '<span>0</span><span>0</span><span>0</span><span>0</span>';
+        }
 
     }, 1000);
 }
