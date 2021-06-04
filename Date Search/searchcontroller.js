@@ -13,7 +13,10 @@ class SearchController {
         } else {
             dateChooser.classList.remove("invaliddate");
         }
-        console.log(startDate);
+
+        const weekdayChooser = this.rootElement.querySelector('label[for="dayname"] > select');
+        const weekday = parseInt(weekdayChooser.value);
+        console.log(weekday);
     }
 
     run() {
