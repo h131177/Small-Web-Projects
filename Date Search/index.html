@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="#">
+<script src="js/searchcontroller.js" defer></script>
+<meta charset="UTF-8">
+<link href="main.css" rel="stylesheet" />
+<title>Dato-søk</title>
+</head>
+<body>
+
+  <h1>Finn årstall</h1>
+
+  <div id="frame">
+    <div id="datovelgerA">
+      <div>
+        <h1>Datosøk</h1>
+        <p>
+          <label for="searchstart">Start dato for søk: <input type="date" /></label>
+        </p>
+        <p>
+          <label for="dayname">Velg ukedag: <select>
+              <option value=-1 selected>&lt;Velg ukedag&gt;</option>
+              <option value=1>Mandag</option>
+              <option value=2>Tirsdag</option>
+              <option value=3>Onsdag</option>
+              <option value=4>Torsdag</option>
+              <option value=5>Fredag</option>
+              <option value=6>Lørdag</option>
+              <option value=0>Søndag</option>
+          </select>
+          </label>
+        </p>
+        <p>
+          <button type="button" data-dosearch>Start søk</button>
+        </p>
+
+        <div data-result class="hidden">
+          <p>
+            Den <span data-searchdate></span> kommer på en <span data-chosenweekdeay></span>:
+          </p>
+          <ul data-yearlist>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="datovelgerB">
+      <div>
+        <h1>Datosøk</h1>
+        <p>
+          <label for="searchstart">Start dato for søk: <input type="date" /></label>
+        </p>
+        <p>
+          <label for="dayname">Velg ukedag: <select>
+              <option value=-1 selected>&lt;Velg ukedag&gt;</option>
+              <option value=1>Mandag</option>
+              <option value=2>Tirsdag</option>
+              <option value=3>Onsdag</option>
+              <option value=4>Torsdag</option>
+              <option value=5>Fredag</option>
+              <option value=6>Lørdag</option>
+              <option value=0>Søndag</option>
+          </select>
+          </label>
+        </p>
+        <p>
+          <button type="button" data-dosearch>Start søk</button>
+        </p>
+
+        <div data-result class="hidden">
+          <p>
+            Den <span data-searchdate></span> kommer på en <span data-chosenweekdeay></span>:
+          </p>
+          <ul data-yearlist>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="datovelgerC">
+      <div>
+        <h1>Datosøk</h1>
+        <p>
+          <label for="searchstart">Start dato for søk: <input type="date" /></label>
+        </p>
+        <p>
+          <label for="dayname">Velg ukedag: <select>
+              <option value=-1 selected>&lt;Velg ukedag&gt;</option>
+              <option value=1>Mandag</option>
+              <option value=2>Tirsdag</option>
+              <option value=3>Onsdag</option>
+              <option value=4>Torsdag</option>
+              <option value=5>Fredag</option>
+              <option value=6>Lørdag</option>
+              <option value=0>Søndag</option>
+          </select>
+          </label>
+        </p>
+        <p>
+          <button type="button" data-dosearch>Start søk</button>
+        </p>
+
+        <div data-result class="hidden">
+          <p>
+            Den <span data-searchdate></span> kommer på en <span data-chosenweekdeay></span>:
+          </p>
+          <ul data-yearlist>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
