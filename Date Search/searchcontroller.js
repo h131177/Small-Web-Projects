@@ -7,7 +7,13 @@ class SearchController {
 
     doSearch() {
         const dateChooser = this.rootElement.querySelector('input[type="date"]');
-        console.log(dateChooser);
+        const startDate = dateChooser.value;
+        if(startDate.trim() == "") {
+            dateChooser.classList.add("invaliddate");
+        } else {
+            dateChooser.classList.remove("invaliddate");
+        }
+        console.log(startDate);
     }
 
     run() {
