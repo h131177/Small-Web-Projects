@@ -6,10 +6,13 @@ class SearchController {
     }
 
     doSearch() {
+        let invalidInput = false;
+
         const dateChooser = this.rootElement.querySelector('input[type="date"]');
         const startDate = dateChooser.value;
         if(startDate.trim() == "") {
             dateChooser.classList.add("invaliddate");
+            invalidInput = true;
         } else {
             dateChooser.classList.remove("invaliddate");
         }
@@ -18,9 +21,12 @@ class SearchController {
         const weekday = parseInt(weekdayChooser.value);
         if(isNaN(weekday) || (weekday == -1)) {
             weekdayChooser.classList.add("datesearch_invalidday");
+            invalidInput = true;
         } else {
             weekdayChooser.classList.remove("datesearch_invalidday");
         }
+
+        if(invalidInput) return;
     }
 
     run() {
