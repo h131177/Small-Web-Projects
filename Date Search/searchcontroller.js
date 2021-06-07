@@ -16,7 +16,11 @@ class SearchController {
 
         const weekdayChooser = this.rootElement.querySelector('label[for="dayname"] > select');
         const weekday = parseInt(weekdayChooser.value);
-        console.log(weekday);
+        if(isNaN(weekday) || (weekday == -1)) {
+            weekdayChooser.classList.add("datesearch_invalidday");
+        } else {
+            weekdayChooser.classList.remove("datesearch_invalidday");
+        }
     }
 
     run() {
