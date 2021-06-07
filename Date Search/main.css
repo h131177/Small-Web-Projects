@@ -1,4 +1,4 @@
-input {
+input, select {
     border-radius: 5px;
     border-width: 1px;
 }
@@ -8,32 +8,17 @@ input {
 }
 
 #frame {
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: 5em;
 }
 
-#datovelgerA, #datovelgerB, #datovelgerC {
-    position: absolute;
-    width: 33%;
-    box-sizing: border-box;
-    top: 0;
+div[data-result]>p:first-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-#datovelgerA>div, #datovelgerB>div, #datovelgerC>div {
-    /* border: 2px solid red; */
-    margin: 0 10px;
-    padding: 0 10px;
-}
-
-#datovelgerA {
-    left: 0;
-}
-
-#datovelgerB {
-    left: 33%;
-}
-
-#datovelgerC {
-    left: 66%;
+ul[data-yearlist] {
+    padding-top: 0;
+    margin-top: 0;
 }

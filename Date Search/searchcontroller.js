@@ -12,10 +12,10 @@ class SearchController {
         const dateChooser = this.rootElement.querySelector('input[type="date"]');
         const startDate = dateChooser.value;
         if(startDate.trim() == "") {
-            dateChooser.classList.add("invaliddate");
+            dateChooser.classList.add("datesearch_invaliddate");
             invalidInput = true;
         } else {
-            dateChooser.classList.remove("invaliddate");
+            dateChooser.classList.remove("datesearch_invaliddate");
         }
 
         const weekdayChooser = this.rootElement.querySelector('label[for="dayname"] > select');
