@@ -37,6 +37,19 @@ class SearchController {
         const dayName = weekdayChooser.querySelector(`option[value="${weekday}"]`).textContent.toLocaleLowerCase(this.locale);
         this.rootElement.querySelector('[data-chosenweekdeay]').textContent = dayName;
 
+        const liList = this.rootElement.querySelector('[data-yearlist]').children;
+
+        const count = liList.length;
+        let i = 0;
+        while (i < count) {
+            let year = date.getFullYear();
+            if(date.getDay() == weekday) {
+                liList[i].textContent = year;
+                i++;
+            }
+            date.setFullYear(year + 1);
+        }
+
         this.rootElement.querySelector('[data-result]').classList.remove("hidden");
     }
 
