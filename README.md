@@ -14,4 +14,4 @@ https://www.youtube.com/watch?v=9bOlAFoFy0A&list=PL4cUxeGkcC9gdqHxcUgGhl_cV6xET1
 
 Date search:
 
-Javascript Project in the Course DAT152
+Javascript example Project in the Course DAT108.
