@@ -1,4 +1,4 @@
-input[type=date].invaliddate {
+input[type=date].datesearch_invaliddate {
     border-color: red;
 }
 
