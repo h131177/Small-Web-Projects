@@ -1,11 +1,29 @@
+/**
+ * Class for å finne datoer som kommer på ønskede ukedager.
+ * Klassen finner de 10 neste år som har dato på gitt dag.
+ */
 class SearchController {
+    /**
+     * Initialiserer SearchController
+     * @param {String} root - ID attributtet til HTML container-elementet (DIV) med HTML FORM elementet
+     */
     constructor(rootID) {
-        this.rootID = rootID;
-        this.locale = "nb-NO";
+        /** @private {String} */ this.rootID = rootID;
+        /** @private {String} */ this.locale = "nb-NO";
+
+        /**
+         * Setter korrekt 'this' for hendelseshåndtererne
+         */
         this.run = this.run.bind(this);
         this.doSearch = this.doSearch.bind(this);
     }
 
+    /**
+     * Metode søker etter datoer som kommer på ønsket dag.
+     * Metoden henter ut ønskede data (dato og dag) fra HTML elementer på websiden og viser resultatet
+     * i en UL-liste på websiden.
+     * @private
+     */
     doSearch() {
         let invalidInput = false;
 
@@ -53,17 +71,27 @@ class SearchController {
         this.rootElement.querySelector('[data-result]').classList.remove("hidden");
     }
 
+    /**
+     * Metode som binder SearchController mot HTML-elementer på websiden
+     * @public
+     */
     run() {
         this.rootElement = document.getElementById(this.rootID);
         this.rootElement.querySelector("button[data-dosearch]").addEventListener("click", this.doSearch);
     }
 }
 
+/**
+ * Initialiserer tre stk. SearchController på websiden.
+ */
 const controllerA = new SearchController("datovelgerA");
-// const controllerB = new SearchController("datovelgerB");
-// const controllerC = new SearchController("datovelgerC");
+const controllerB = new SearchController("datovelgerB");
+const controllerC = new SearchController("datovelgerC");
 
+/**
+ * De tre stk. SearchController bindes til HTML-elementer ved hendelse "DOMContentLoaded"
+ */
 document.addEventListener("DOMContentLoaded", controllerA.run);
-// document.addEventListener("DOMContentLoaded", controllerB.run);
-// document.addEventListener("DOMContentLoaded", controllerC.run);
+document.addEventListener("DOMContentLoaded", controllerB.run);
+document.addEventListener("DOMContentLoaded", controllerC.run);
 
