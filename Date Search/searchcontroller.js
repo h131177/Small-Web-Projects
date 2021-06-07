@@ -1,6 +1,7 @@
 class SearchController {
     constructor(rootID) {
         this.rootID = rootID;
+        this.locale = "nb-NO";
         this.run = this.run.bind(this);
         this.doSearch = this.doSearch.bind(this);
     }
@@ -27,6 +28,16 @@ class SearchController {
         }
 
         if(invalidInput) return;
+
+        const [year, month, day] = startDate.split('-');
+        const date = new Date(year, month - 1, day);
+
+        const options = {month: 'long', day: 'numeric'};
+        this.rootElement.querySelector('[data-searchdate]').textContent =date.toLocaleDateString(this.locale, options);
+        const dayName = weekdayChooser.querySelector(`option[value="${weekday}"]`).textContent.toLocaleLowerCase(this.locale);
+        this.rootElement.querySelector('[data-chosenweekdeay]').textContent = dayName;
+
+        this.rootElement.querySelector('[data-result]').classList.remove("hidden");
     }
 
     run() {
