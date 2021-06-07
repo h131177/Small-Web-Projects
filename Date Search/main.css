@@ -1,11 +1,3 @@
-input[type=date].invaliddate {
-    border-color: red;
-}
-
-select.datesearch_invalidday {
-    border-color: red;
-}
-
 input {
     border-radius: 5px;
     border-width: 1px;

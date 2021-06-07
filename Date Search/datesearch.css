@@ -1,0 +1,7 @@
+input[type=date].invaliddate {
+    border-color: red;
+}
+
+select.datesearch_invalidday {
+    border-color: red;
+}
