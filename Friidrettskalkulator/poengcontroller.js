@@ -1,3 +1,5 @@
+"use strict"
+
 class PoengController {
 
     constructor(rootID) {
@@ -8,7 +10,15 @@ class PoengController {
     }
 
     calculate() {
+        const eventChooser = this.rootElement.querySelector('select');
+        const event = eventChooser.value;
+        this.rootElement.querySelector('[data-event]').textContent = event;
         
+        const inputChooser = this.rootElement.querySelector('input[type="text"]');
+        const input = inputChooser.value;
+        this.rootElement.querySelector('[data-input]').textContent = input;
+
+        this.rootElement.querySelector('[data-result]').classList.remove("hidden");
     }
 
     run() {
