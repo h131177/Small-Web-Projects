@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="poengcontroller.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friidrettskalkulator</title>
+</head>
+<body>
+    <h1>Friidrettskalkulator</h1>
+    <div id="runRoot">
+        <p>Løp</p>
+        <label for="distance">Øvelse:</label>
+        <select name="distance" id="distance">
+            <option value="100m">100m</option>
+            <option value="200m">200m</option>
+            <option value="400m">400m</option>
+        </select>
+        <label for="runResult">Resultat:</label>
+        <input type="text" name="runResult" id="runResult">
+        <button>Beregn</button>
+        <p class="hidden">
+            Resultatet <span data-input></span> på distansen <span data-event></span> gir <span data-points></span> poeng
+        </p>
+    </div>
+
+    <div id="jumpRoot">
+        <p>Hopp</p>
+        <label for="jumpEvent">Øvelse:</label>
+        <select name="jumpEvent" id="jumpEvent">
+            <option value="lengde">lengde</option>
+            <option value="hogde">Høgde</option>
+            <option value="stav">Stav</option>
+            <option value="tresteg">Tresteg</option>
+        </select>
+        <label for="jumpResult">Resultat:</label>
+        <input type="text" name="jumpResult" id="jumpResult">
+        <button>Beregn</button>
+        <p class="hidden">
+            Resultatet <span data-input></span> i <span data-event></span> gir <span data-points></span> poeng
+        </p>
+    </div>
+
+    <div id="throwRoot">
+        <p>Kast</p>
+        <label for="throwEvent">Øvelse:</label>
+        <select name="throwEvent" id="throwEvent">
+            <option value="spyd">Spyd</option>
+            <option value="diskos">Diskos</option>
+            <option value="kule">Kule</option>
+            <option value="slegge">Slegge</option>
+        </select>
+        <label for="throwResult">Resultat:</label>
+        <input type="text" name="throwResult" id="throwResult">
+        <button>Beregn</button>
+        <p class="hidden">
+            Resultatet <span data-input></span> i <span data-event></span> gir <span data-points></span> poeng
+        </p>
+    </div>
+    
+</body>
+</html>
