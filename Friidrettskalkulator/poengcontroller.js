@@ -67,6 +67,8 @@ eventInfo.set('100m', {tusen: 11.35, multiplikator: 1.7, type: "run"});
 eventInfo.set('200m', {tusen: 22.65, multiplikator: 0.85, type: "run"});
 eventInfo.set('400m', {tusen: 51.00, multiplikator: 0.4, type: "run"});
 eventInfo.set('lengde', {tusen: 6.80, multiplikator: 2, type: "jump"});
+eventInfo.set('hogde', {tusen: 1.96, multiplikator: 7, type: "jump"});
+eventInfo.set('tresteg', {tusen: 14.00, multiplikator: 1, type: "jump"});
 
 const controllerRun = new PoengController("runRoot");
 const controllerJump = new PoengController("jumpRoot");
