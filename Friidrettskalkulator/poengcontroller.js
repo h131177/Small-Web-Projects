@@ -24,17 +24,26 @@ class PoengController {
             let temp;
             const info = eventInfo.get(event);
             if(input > info.tusen) {
-                temp = input - info.tusen;
+                temp = Math.abs(input - info.tusen);
                 temp *= 100;
                 temp = Math.ceil(temp);
                 temp *= info.multiplikator;
-                points = Math.floor(1000 - temp);  
+                if(info.type == "run") {
+                    points = Math.floor(1000 - temp); 
+                } else {
+                    points = Math.floor(1000 + temp); 
+                }   
             } else if(input < info.tusen) {
-                temp = info.tusen - input;
+                temp = Math.abs(info.tusen - input);
                 temp *= 100;
                 temp = Math.ceil(temp);
                 temp *= info.multiplikator;
-                points = Math.floor(1000 + temp);
+                if(info.type == "run") {
+                    points = Math.floor(1000 + temp);
+                } else {
+                    points = Math.floor(1000 - temp);
+                }
+                
             } else {
                 points = 1000;
             }
@@ -54,10 +63,10 @@ class PoengController {
 //TODO: Utvide med både alder og kjønn
 //Testing med verdier for gutter 18 år
 const eventInfo = new Map();
-eventInfo.set('100m', {tusen: 11.35, multiplikator: 1.7});
-eventInfo.set('200m', {tusen: 22.65, multiplikator: 0.85});
-eventInfo.set('400m', {tusen: 51.00, multiplikator: 0.4});
-
+eventInfo.set('100m', {tusen: 11.35, multiplikator: 1.7, type: "run"});
+eventInfo.set('200m', {tusen: 22.65, multiplikator: 0.85, type: "run"});
+eventInfo.set('400m', {tusen: 51.00, multiplikator: 0.4, type: "run"});
+eventInfo.set('lengde', {tusen: 6.80, multiplikator: 2, type: "jump"});
 
 const controllerRun = new PoengController("runRoot");
 const controllerJump = new PoengController("jumpRoot");
