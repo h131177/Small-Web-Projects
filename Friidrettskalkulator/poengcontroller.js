@@ -18,7 +18,29 @@ class PoengController {
         const input = inputChooser.value;
         this.rootElement.querySelector('[data-input]').textContent = input;
 
-        
+        let points;
+
+        if(eventInfo.has(event)) {
+            let temp;
+            const info = eventInfo.get(event);
+            if(input > info.tusen) {
+                temp = input - info.tusen;
+                temp *= 100;
+                temp = Math.ceil(temp);
+                temp *= info.multiplikator;
+                points = Math.floor(1000 - temp);  
+            } else if(input < info.tusen) {
+                temp = info.tusen - input;
+                temp *= 100;
+                temp = Math.ceil(temp);
+                temp *= info.multiplikator;
+                points = Math.floor(1000 + temp);
+            } else {
+                points = 1000;
+            }
+            console.log(points);
+        }
+        this.rootElement.querySelector('[data-points').textContent = points;
 
         this.rootElement.querySelector('[data-result]').classList.remove("hidden");
     }
@@ -29,11 +51,13 @@ class PoengController {
     }
 }
 
-//Testing med verdier for 18 åringer
+//TODO: Utvide med både alder og kjønn
+//Testing med verdier for gutter 18 år
 const eventInfo = new Map();
 eventInfo.set('100m', {tusen: 11.35, multiplikator: 1.7});
 eventInfo.set('200m', {tusen: 22.65, multiplikator: 0.85});
 eventInfo.set('400m', {tusen: 51.00, multiplikator: 0.4});
+
 
 const controllerRun = new PoengController("runRoot");
 const controllerJump = new PoengController("jumpRoot");
