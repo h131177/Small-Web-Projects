@@ -19,6 +19,7 @@ class PoengController {
         this.rootElement.querySelector('[data-input]').textContent = input;
 
         const age = document.querySelector('[data-age]').value;
+        this.rootElement.querySelector('[data-class]').textContent = age;
 
         let points = 0;
 
