@@ -20,7 +20,7 @@ class PoengController {
 
         const age = document.querySelector('[data-age]').value;
 
-        let points;
+        let points = 0;
 
         if(eventInfo.has(event + age)) {
             let temp;
@@ -53,6 +53,30 @@ class PoengController {
             } else {
                 //Kode for kast og stav
                 //Litt annerledes algoritme her
+                if(input > info.tusen) {
+                    temp = input - info.tusen;
+                    temp *= 100;
+                    temp = Math.ceil(temp);
+                    temp *= info.multiplikatorOver;
+                    points = 1000 + temp;
+                } else if(input > info.attiprosent && input < info.tusen) {
+                    temp = input - info.attiprosent;
+                    temp *= 100;
+                    temp = Math.ceil(temp);
+                    temp *= info.multiplikator;
+                    points = info.attipoeng + temp;
+                } else if(input < info.attiprosent) {
+                    temp = info.attiprosent - input;
+                    temp *= 100;
+                    temp = Math.ceil(temp);
+                    temp *= info.multiplikatorUnder;
+                    points = info.attipoeng - temp;
+                } else if(input == info.tusen) {
+                    points = 1000;
+                } else if(input == info.attiprosent) {
+                    points = info.attipoeng;
+                }
+                points = Math.floor(points);
             }
             
             console.log(points);
