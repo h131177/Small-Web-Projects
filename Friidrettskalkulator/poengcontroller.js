@@ -18,11 +18,13 @@ class PoengController {
         const input = inputChooser.value;
         this.rootElement.querySelector('[data-input]').textContent = input;
 
+        const age = document.querySelector('[data-age]').value;
+
         let points;
 
-        if(eventInfo.has(event)) {
+        if(eventInfo.has(event + age)) {
             let temp;
-            const info = eventInfo.get(event);
+            const info = eventInfo.get(event + age);
             if(input > info.tusen) {
                 temp = Math.abs(input - info.tusen);
                 temp *= 100;
@@ -63,12 +65,12 @@ class PoengController {
 //TODO: Utvide med både alder og kjønn
 //Testing med verdier for gutter 18 år
 const eventInfo = new Map();
-eventInfo.set('100m', {tusen: 11.35, multiplikator: 1.7, type: "run"});
-eventInfo.set('200m', {tusen: 22.65, multiplikator: 0.85, type: "run"});
-eventInfo.set('400m', {tusen: 51.00, multiplikator: 0.4, type: "run"});
-eventInfo.set('lengde', {tusen: 6.80, multiplikator: 2, type: "jump"});
-eventInfo.set('hogde', {tusen: 1.96, multiplikator: 7, type: "jump"});
-eventInfo.set('tresteg', {tusen: 14.00, multiplikator: 1, type: "jump"});
+eventInfo.set('100mG18', {tusen: 11.35, multiplikator: 1.7, type: "run"});
+eventInfo.set('200mG18', {tusen: 22.65, multiplikator: 0.85, type: "run"});
+eventInfo.set('400mG18', {tusen: 51.00, multiplikator: 0.4, type: "run"});
+eventInfo.set('lengdeG18', {tusen: 6.80, multiplikator: 2, type: "jump"});
+eventInfo.set('hogdeG18', {tusen: 1.96, multiplikator: 7, type: "jump"});
+eventInfo.set('trestegG18', {tusen: 14.00, multiplikator: 1, type: "jump"});
 
 const controllerRun = new PoengController("runRoot");
 const controllerJump = new PoengController("jumpRoot");
