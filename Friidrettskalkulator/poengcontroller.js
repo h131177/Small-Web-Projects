@@ -25,30 +25,36 @@ class PoengController {
         if(eventInfo.has(event + age)) {
             let temp;
             const info = eventInfo.get(event + age);
-            if(input > info.tusen) {
-                temp = Math.abs(input - info.tusen);
-                temp *= 100;
-                temp = Math.ceil(temp);
-                temp *= info.multiplikator;
-                if(info.type == "run") {
-                    points = Math.floor(1000 - temp); 
+            if(info.type != 'throw' && event != 'stav') {
+                if(input > info.tusen) {
+                    temp = Math.abs(input - info.tusen);
+                    temp *= 100;
+                    temp = Math.ceil(temp);
+                    temp *= info.multiplikator;
+                    if(info.type == "run") {
+                        points = Math.floor(1000 - temp); 
+                    } else {
+                        points = Math.floor(1000 + temp); 
+                    }   
+                } else if(input < info.tusen) {
+                    temp = Math.abs(info.tusen - input);
+                    temp *= 100;
+                    temp = Math.ceil(temp);
+                    temp *= info.multiplikator;
+                    if(info.type == "run") {
+                        points = Math.floor(1000 + temp);
+                    } else {
+                        points = Math.floor(1000 - temp);
+                    }
+                    
                 } else {
-                    points = Math.floor(1000 + temp); 
-                }   
-            } else if(input < info.tusen) {
-                temp = Math.abs(info.tusen - input);
-                temp *= 100;
-                temp = Math.ceil(temp);
-                temp *= info.multiplikator;
-                if(info.type == "run") {
-                    points = Math.floor(1000 + temp);
-                } else {
-                    points = Math.floor(1000 - temp);
+                    points = 1000;
                 }
-                
             } else {
-                points = 1000;
+                //Kode for kast og stav
+                //Litt annerledes algoritme her
             }
+            
             console.log(points);
         }
         this.rootElement.querySelector('[data-points').textContent = points;
