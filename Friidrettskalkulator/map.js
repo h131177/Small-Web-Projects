@@ -6,6 +6,10 @@ eventInfo.set('200mG18', {tusen: 22.65, multiplikator: 0.85, gange: 100, type: "
 eventInfo.set('110hkG18', {tusen: 15.30, multiplikator: 1, gange: 100, type: "run"});
 eventInfo.set('400hkG18', {tusen: 56.00, multiplikator: 0.34, gange: 100, type: "run"});
 eventInfo.set('400mG18', {tusen: 51.00, multiplikator: 0.4, gange: 100, type: "run"});
+eventInfo.set('800mG18', {tusen: 115.50, multiplikator: 1.8, gange: 10, type: "run"});
+eventInfo.set('1500mG18', {tusen: 242, multiplikator: 0.7, gange: 10, type: "run"});
+eventInfo.set('3000mG18', {tusen: 530, multiplikator: 0.27, gange: 10, type: "run"});
+eventInfo.set('5000mG18', {tusen: 930, multiplikator: 0.15, gange: 10, type: "run"});
 eventInfo.set('lengdeG18', {tusen: 6.80, multiplikator: 2, gange: 100, type: "jump"});
 eventInfo.set('hogdeG18', {tusen: 1.96, multiplikator: 7, gange: 100, type: "jump"});
 eventInfo.set('trestegG18', {tusen: 14.00, multiplikator: 1, gange: 100, type: "jump"});
@@ -20,6 +24,10 @@ eventInfo.set('200mJ18', {tusen: 25.70, multiplikator: 0.78, gange: 100, type: "
 eventInfo.set('100hkJ18', {tusen:14.90, multiplikator: 1, gange: 100, type: "run"});
 eventInfo.set('400hkJ18', {tusen: 63.10, multiplikator: 0.3, gange: 100, type: "run"});
 eventInfo.set('400mJ18', {tusen: 57.50, multiplikator: 0.38, gange: 100, type: "run"});
+eventInfo.set('800mJ18', {tusen: 133, multiplikator: 1.5, gange: 10, type: "run"});
+eventInfo.set('1500mJ18', {tusen: 277, multiplikator: 0.6, gange: 10, type: "run"});
+eventInfo.set('3000mJ18', {tusen: 607, multiplikator: 0.23, gange: 10, type: "run"});
+eventInfo.set('5000mJ18', {tusen: 1065, multiplikator: 0.13, gange: 10, type: "run"});
 eventInfo.set('lengdeJ18', {tusen: 5.63, multiplikator: 2.1, gange: 100, type: "jump"});
 eventInfo.set('hogdeJ18', {tusen: 1.68, multiplikator: 7.5, gange: 100, type: "jump"});
 eventInfo.set('trestegJ18', {tusen: 12.40, multiplikator: 1, gange: 100, type: "jump"});

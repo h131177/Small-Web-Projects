@@ -15,7 +15,7 @@ class PoengController {
         this.rootElement.querySelector('[data-event]').textContent = event;
         
         const inputChooser = this.rootElement.querySelector('input[type="text"]');
-        const input = inputChooser.value;
+        let input = inputChooser.value;
         this.rootElement.querySelector('[data-input]').textContent = input;
 
         const age = document.querySelector('[data-age]').value;
@@ -26,6 +26,17 @@ class PoengController {
         if(eventInfo.has(event + age)) {
             let temp;
             const info = eventInfo.get(event + age);
+
+            //Sjekker om det er et løp over 400m og konverterer til sekunder
+            if(info.gange == 10) {
+                const tab = input.split(".");
+                for(let i = 0; i < tab.length; i++) {
+                    tab[i] = parseInt(tab[i]);
+                }
+                input = tab[0]*60 + tab[1] + (tab[2]/100);
+                console.log(input);
+            }
+
             if(info.type != 'throw' && event != 'stav') {
                 if(input > info.tusen) {
                     temp = Math.abs(input - info.tusen);
