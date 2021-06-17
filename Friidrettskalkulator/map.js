@@ -3,6 +3,8 @@ export const eventInfo = new Map();
 //G18
 eventInfo.set('100mG18', {tusen: 11.35, multiplikator: 1.7, gange: 100, type: "run"});
 eventInfo.set('200mG18', {tusen: 22.65, multiplikator: 0.85, gange: 100, type: "run"});
+eventInfo.set('110hkG18', {tusen: 15.30, multiplikator: 1, gange: 100, type: "run"});
+eventInfo.set('400hkG18', {tusen: 56.00, multiplikator: 0.34, gange: 100, type: "run"});
 eventInfo.set('400mG18', {tusen: 51.00, multiplikator: 0.4, gange: 100, type: "run"});
 eventInfo.set('lengdeG18', {tusen: 6.80, multiplikator: 2, gange: 100, type: "jump"});
 eventInfo.set('hogdeG18', {tusen: 1.96, multiplikator: 7, gange: 100, type: "jump"});
@@ -15,6 +17,8 @@ eventInfo.set('sleggeG18', {tusen: 56.00, attiprosent: 44.80, attipoeng: 776, mu
 //J18
 eventInfo.set('100mJ18', {tusen: 12.50, multiplikator: 1.6, gange: 100, type: "run"});
 eventInfo.set('200mJ18', {tusen: 25.70, multiplikator: 0.78, gange: 100, type: "run"});
+eventInfo.set('100hkJ18', {tusen:14.90, multiplikator: 1, gange: 100, type: "run"});
+eventInfo.set('400hkJ18', {tusen: 63.10, multiplikator: 0.3, gange: 100, type: "run"});
 eventInfo.set('400mJ18', {tusen: 57.50, multiplikator: 0.38, gange: 100, type: "run"});
 eventInfo.set('lengdeJ18', {tusen: 5.63, multiplikator: 2.1, gange: 100, type: "jump"});
 eventInfo.set('hogdeJ18', {tusen: 1.68, multiplikator: 7.5, gange: 100, type: "jump"});
