@@ -28,7 +28,7 @@ class PoengController {
             if(info.type != 'throw' && event != 'stav') {
                 if(input > info.tusen) {
                     temp = Math.abs(input - info.tusen);
-                    temp *= 100;
+                    temp *= info.gange;
                     temp = Math.ceil(temp);
                     temp *= info.multiplikator;
                     if(info.type == "run") {
@@ -38,7 +38,7 @@ class PoengController {
                     }   
                 } else if(input < info.tusen) {
                     temp = Math.abs(info.tusen - input);
-                    temp *= 100;
+                    temp *= info.gange;
                     temp = Math.ceil(temp);
                     temp *= info.multiplikator;
                     if(info.type == "run") {
