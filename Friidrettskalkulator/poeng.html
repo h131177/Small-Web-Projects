@@ -27,23 +27,25 @@
 
     <div id="runRoot">
         <p>Løp</p>
-        <label for="distance">Øvelse:</label>
-        <select name="distance" id="distance">
-            <option value="100m">100m</option>
-            <option value="200m">200m</option>
-            <option value="400m">400m</option>
-            <option value="800m">800m</option>
-            <option value="1500m">1500m</option>
-            <option value="3000m">3000m</option>
-            <option value="5000m">5000m</option>
-            <option value="100hk">100m hekk</option>
-            <option value="110hk">110m hekk</option>
-            <option value="400hk">400m hekk</option>
-        </select>
-        <label for="runResult">Resultat:</label>
-        <input type="text" name="runResult" id="runResult">
-        <span class="tooltip" data-tooltip="Bruk punktum og ikkje komma. Eks: 11.20 og 2.05.30">?</span>
-        <button>Beregn</button>
+        <form action="">
+            <label for="distance">Øvelse:</label>
+            <select name="distance" id="distance">
+                <option value="100m">100m</option>
+                <option value="200m">200m</option>
+                <option value="400m">400m</option>
+                <option value="800m">800m</option>
+                <option value="1500m">1500m</option>
+                <option value="3000m">3000m</option>
+                <option value="5000m">5000m</option>
+                <option value="100hk">100m hekk</option>
+                <option value="110hk">110m hekk</option>
+                <option value="400hk">400m hekk</option>
+            </select>
+            <label for="runResult">Resultat:</label>
+            <input type="text" name="runResult" id="runResult">
+            <span class="tooltip" data-tooltip="Bruk punktum og ikkje komma. Eks: 11.20 og 2.05.30">?</span>
+            <button>Beregn</button>
+        </form>
         <p data-result class="hidden">
             Resultatet <span data-input></span> på distansen <span data-event></span> gir <span data-points></span> poeng i klassen <span data-class></span>
         </p>
@@ -51,16 +53,18 @@
 
     <div id="jumpRoot">
         <p>Hopp</p>
-        <label for="jumpEvent">Øvelse:</label>
-        <select name="jumpEvent" id="jumpEvent">
-            <option value="lengde">Lengde</option>
-            <option value="hogde">Høgde</option>
-            <option value="stav">Stav</option>
-            <option value="tresteg">Tresteg</option>
-        </select>
-        <label for="jumpResult">Resultat:</label>
-        <input type="text" name="jumpResult" id="jumpResult">
-        <button>Beregn</button>
+        <form action="">
+            <label for="jumpEvent">Øvelse:</label>
+            <select name="jumpEvent" id="jumpEvent">
+                <option value="lengde">Lengde</option>
+                <option value="hogde">Høgde</option>
+                <option value="stav">Stav</option>
+                <option value="tresteg">Tresteg</option>
+            </select>
+            <label for="jumpResult">Resultat:</label>
+            <input type="text" name="jumpResult" id="jumpResult">
+            <button>Beregn</button>
+        </form>
         <p data-result class="hidden">
             Resultatet <span data-input></span> i <span data-event></span> gir <span data-points></span> poeng i klassen <span data-class></span>
         </p>
@@ -68,16 +72,18 @@
 
     <div id="throwRoot">
         <p>Kast</p>
-        <label for="throwEvent">Øvelse:</label>
-        <select name="throwEvent" id="throwEvent">
-            <option value="spyd">Spyd</option>
-            <option value="diskos">Diskos</option>
-            <option value="kule">Kule</option>
-            <option value="slegge">Slegge</option>
-        </select>
-        <label for="throwResult">Resultat:</label>
-        <input type="text" name="throwResult" id="throwResult">
-        <button>Beregn</button>
+        <form action="">
+            <label for="throwEvent">Øvelse:</label>
+            <select name="throwEvent" id="throwEvent">
+                <option value="spyd">Spyd</option>
+                <option value="diskos">Diskos</option>
+                <option value="kule">Kule</option>
+                <option value="slegge">Slegge</option>
+            </select>
+            <label for="throwResult">Resultat:</label>
+            <input type="text" name="throwResult" id="throwResult">
+            <button>Beregn</button>
+        </form>
         <p data-result class="hidden">
             Resultatet <span data-input></span> i <span data-event></span> gir <span data-points></span> poeng i klassen <span data-class></span>
         </p>

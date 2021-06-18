@@ -9,7 +9,7 @@ class PoengController {
         this.calculate = this.calculate.bind(this);
     }
 
-    calculate() {
+    calculate(e) {
         const eventChooser = this.rootElement.querySelector('select');
         const event = eventChooser.value;
         this.rootElement.querySelector('[data-event]').textContent = event;
@@ -96,6 +96,7 @@ class PoengController {
         this.rootElement.querySelector('[data-points').textContent = points;
 
         this.rootElement.querySelector('[data-result]').classList.remove("hidden");
+        e.preventDefault();
     }
 
     run() {
