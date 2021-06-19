@@ -7,6 +7,30 @@ body {
     color: #fff;
 }
 
+form {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 2% 0;
+}
+
+label {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+form input {
+    padding: 2px 2px 2px;
+    font-size: 16px;
+    border: 0;
+    color: #444;
+    max-width: 100px;
+}
+
+form button {
+    font-size: 16px;
+}
+
 /* Tooltip Styles */
 .tooltip {
     position: relative;
