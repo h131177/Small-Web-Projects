@@ -142,6 +142,22 @@ eventInfo.set('spydJ16', {tusen: 40.00, attiprosent: 32.00, attipoeng: 800, mult
 eventInfo.set('diskosJ16', {tusen: 37.00, attiprosent: 29.60, attipoeng: 778, multiplikatorOver: 0.15, multiplikator: 0.3, multiplikatorUnder: 0.6, type: "throw"});
 eventInfo.set('kuleJ16', {tusen: 12.00, attiprosent: 9.60, attipoeng: 856, multiplikatorOver: 0.3, multiplikator: 0.6, multiplikatorUnder: 1.2, type: "throw"});
 eventInfo.set('sleggeJ16', {tusen: 41.00, attiprosent: 32.80, attipoeng: 795, multiplikatorOver: 0.12, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
+//G15
+eventInfo.set('100mG15', {tusen: 11.95, multiplikator: 1.7, gange: 100, type: "run"});
+eventInfo.set('200mG15', {tusen: 24.00, multiplikator: 0.85, gange: 100, type: "run"});
+eventInfo.set('100hkG15', {tusen: 14.00, multiplikator: 1.1, gange: 100, type: "run"});
+eventInfo.set('300hkG15', {tusen: 43.00, multiplikator: 0.46, gange: 100, type: "run"});
+eventInfo.set('400mG15', {tusen: 54.30, multiplikator: 0.4, gange: 100, type: "run"});
+eventInfo.set('800mG15', {tusen: 124, multiplikator: 1.8, gange: 10, type: "run"});
+eventInfo.set('1500mG15', {tusen: 260, multiplikator: 0.7, gange: 10, type: "run"});
+eventInfo.set('lengdeG15', {tusen: 6.15, multiplikator: 2, gange: 100, type: "jump"});
+eventInfo.set('hogdeG15', {tusen: 1.80, multiplikator: 7, gange: 100, type: "jump"});
+eventInfo.set('trestegG15', {tusen: 12.80, multiplikator: 1, gange: 100, type: "jump"});
+eventInfo.set('stavG15', {tusen: 3.50, attiprosent: 2.80, attipoeng: 755, multiplikatorOver: 1.7, multiplikator: 3.5, multiplikatorUnder: 7, type: "jump"});
+eventInfo.set('spydG15', {tusen: 52.00, attiprosent: 41.60, attipoeng: 792, multiplikatorOver: 0.1, multiplikator: 0.2, multiplikatorUnder: 0.4, type: "throw"});
+eventInfo.set('diskosG15', {tusen: 51.00, attiprosent: 40.80, attipoeng: 745, multiplikatorOver: 0.13, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
+eventInfo.set('kuleG15', {tusen: 15.30, attiprosent: 12.24, attipoeng: 816, multiplikatorOver: 0.3, multiplikator: 0.6, multiplikatorUnder: 1.2, type: "throw"});
+eventInfo.set('sleggeG15', {tusen: 50.00, attiprosent: 40.00, attipoeng: 800, multiplikatorOver: 0.1, multiplikator: 0.2, multiplikatorUnder: 0.4, type: "throw"});
 //J15
 eventInfo.set('100mJ15', {tusen: 12.90, multiplikator: 1.6, gange: 100, type: "run"});
 eventInfo.set('200mJ15', {tusen: 26.50, multiplikator: 0.78, gange: 100, type: "run"});
