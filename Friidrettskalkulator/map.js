@@ -108,3 +108,20 @@ eventInfo.set('spydJ17', {tusen: 42.00, attiprosent: 33.60, attipoeng: 790, mult
 eventInfo.set('diskosJ17', {tusen: 40.00, attiprosent: 32.00, attipoeng: 760, multiplikatorOver: 0.15, multiplikator: 0.3, multiplikatorUnder: 0.6, type: "throw"});
 eventInfo.set('kuleJ17', {tusen: 12.60, attiprosent: 10.08, attipoeng: 848, multiplikatorOver: 0.3, multiplikator: 0.6, multiplikatorUnder: 1.2, type: "throw"});
 eventInfo.set('sleggeJ17', {tusen: 44.00, attiprosent: 35.20, attipoeng: 780, multiplikatorOver: 0.12, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
+//J16
+eventInfo.set('100mJ16', {tusen: 12.75, multiplikator: 1.6, gange: 100, type: "run"});
+eventInfo.set('200mJ16', {tusen: 26.15, multiplikator: 0.78, gange: 100, type: "run"});
+eventInfo.set('80hkJ16', {tusen:12.20, multiplikator: 1.4, gange: 100, type: "run"});
+eventInfo.set('300hkJ16', {tusen: 46.40, multiplikator: 0.4, gange: 100, type: "run"});
+eventInfo.set('400mJ16', {tusen: 58.80, multiplikator: 0.38, gange: 100, type: "run"});
+eventInfo.set('800mJ16', {tusen: 136, multiplikator: 1.5, gange: 10, type: "run"});
+eventInfo.set('1500mJ16', {tusen: 282, multiplikator: 0.6, gange: 10, type: "run"});
+eventInfo.set('3000mJ16', {tusen: 625, multiplikator: 0.23, gange: 10, type: "run"});
+eventInfo.set('lengdeJ16', {tusen: 5.47, multiplikator: 2.1, gange: 100, type: "jump"});
+eventInfo.set('hogdeJ16', {tusen: 1.64, multiplikator: 7.5, gange: 100, type: "jump"});
+eventInfo.set('trestegJ16', {tusen: 11.90, multiplikator: 1, gange: 100, type: "jump"});
+eventInfo.set('stavJ16', {tusen: 3.10, attiprosent: 2.48, attipoeng: 752, multiplikatorOver: 2, multiplikator: 4, multiplikatorUnder: 8, type: "jump"});
+eventInfo.set('spydJ16', {tusen: 40.00, attiprosent: 32.00, attipoeng: 800, multiplikatorOver: 0.13, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
+eventInfo.set('diskosJ16', {tusen: 37.00, attiprosent: 29.60, attipoeng: 778, multiplikatorOver: 0.15, multiplikator: 0.3, multiplikatorUnder: 0.6, type: "throw"});
+eventInfo.set('kuleJ16', {tusen: 12.00, attiprosent: 9.60, attipoeng: 856, multiplikatorOver: 0.3, multiplikator: 0.6, multiplikatorUnder: 1.2, type: "throw"});
+eventInfo.set('sleggeJ16', {tusen: 41.00, attiprosent: 32.80, attipoeng: 795, multiplikatorOver: 0.12, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
