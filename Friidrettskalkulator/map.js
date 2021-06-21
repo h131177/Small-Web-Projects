@@ -72,3 +72,21 @@ eventInfo.set('spydJ18', {tusen: 42.00, attiprosent: 33.60, attipoeng: 790, mult
 eventInfo.set('diskosJ18', {tusen: 42.00, attiprosent: 33.60, attipoeng: 748, multiplikatorOver: 0.15, multiplikator: 0.3, multiplikatorUnder: 0.6, type: "throw"});
 eventInfo.set('kuleJ18', {tusen: 11.40, attiprosent: 9.12, attipoeng: 863, multiplikatorOver: 0.3, multiplikator: 0.6, multiplikatorUnder: 1.2, type: "throw"});
 eventInfo.set('sleggeJ18', {tusen: 46.00, attiprosent: 36.80, attipoeng: 770, multiplikatorOver: 0.12, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
+//J17
+eventInfo.set('100mJ17', {tusen: 12.60, multiplikator: 1.6, gange: 100, type: "run"});
+eventInfo.set('200mJ17', {tusen: 25.90, multiplikator: 0.78, gange: 100, type: "run"});
+eventInfo.set('100hkJ17', {tusen:15.00, multiplikator: 1, gange: 100, type: "run"});
+eventInfo.set('300hkJ17', {tusen: 45.90, multiplikator: 0.4, gange: 100, type: "run"});
+eventInfo.set('400mJ17', {tusen: 58.00, multiplikator: 0.38, gange: 100, type: "run"});
+eventInfo.set('800mJ17', {tusen: 134, multiplikator: 1.5, gange: 10, type: "run"});
+eventInfo.set('1500mJ17', {tusen: 279, multiplikator: 0.6, gange: 10, type: "run"});
+eventInfo.set('3000mJ17', {tusen: 615, multiplikator: 0.23, gange: 10, type: "run"});
+eventInfo.set('5000mJ17', {tusen: 1080, multiplikator: 0.13, gange: 10, type: "run"});
+eventInfo.set('lengdeJ17', {tusen: 5.55, multiplikator: 2.1, gange: 100, type: "jump"});
+eventInfo.set('hogdeJ17', {tusen: 1.66, multiplikator: 7.5, gange: 100, type: "jump"});
+eventInfo.set('trestegJ17', {tusen: 12.20, multiplikator: 1, gange: 100, type: "jump"});
+eventInfo.set('stavJ17', {tusen: 3.20, attiprosent: 2.56, attipoeng: 744, multiplikatorOver: 2, multiplikator: 4, multiplikatorUnder: 8, type: "jump"});
+eventInfo.set('spydJ17', {tusen: 42.00, attiprosent: 33.60, attipoeng: 790, multiplikatorOver: 0.13, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
+eventInfo.set('diskosJ17', {tusen: 40.00, attiprosent: 32.00, attipoeng: 760, multiplikatorOver: 0.15, multiplikator: 0.3, multiplikatorUnder: 0.6, type: "throw"});
+eventInfo.set('kuleJ17', {tusen: 12.60, attiprosent: 10.08, attipoeng: 848, multiplikatorOver: 0.3, multiplikator: 0.6, multiplikatorUnder: 1.2, type: "throw"});
+eventInfo.set('sleggeJ17', {tusen: 44.00, attiprosent: 35.20, attipoeng: 780, multiplikatorOver: 0.12, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
