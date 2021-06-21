@@ -18,6 +18,24 @@ eventInfo.set('spydG19', {tusen: 62.00, attiprosent: 49.60, attipoeng: 752, mult
 eventInfo.set('diskosG19', {tusen: 48.00, attiprosent: 38.40, attipoeng: 760, multiplikatorOver: 0.13, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
 eventInfo.set('kuleG19', {tusen: 15.20, attiprosent: 12.16, attipoeng: 817, multiplikatorOver: 0.3, multiplikator: 0.6, multiplikatorUnder: 1.2, type: "throw"});
 eventInfo.set('sleggeG19', {tusen: 62.00, attiprosent: 49.60, attipoeng: 752, multiplikatorOver: 0.1, multiplikator: 0.2, multiplikatorUnder: 0.4, type: "throw"});
+//J19
+eventInfo.set('100mJ19', {tusen: 12.40, multiplikator: 1.6, gange: 100, type: "run"});
+eventInfo.set('200mJ19', {tusen: 25.55, multiplikator: 0.78, gange: 100, type: "run"});
+eventInfo.set('100hkJ19', {tusen:14.70, multiplikator: 1, gange: 100, type: "run"});
+eventInfo.set('400hkJ19', {tusen: 62.50, multiplikator: 0.3, gange: 100, type: "run"});
+eventInfo.set('400mJ19', {tusen: 57.00, multiplikator: 0.38, gange: 100, type: "run"});
+eventInfo.set('800mJ19', {tusen: 132.50, multiplikator: 1.5, gange: 10, type: "run"});
+eventInfo.set('1500mJ19', {tusen: 275, multiplikator: 0.6, gange: 10, type: "run"});
+eventInfo.set('3000mJ19', {tusen: 600, multiplikator: 0.23, gange: 10, type: "run"});
+eventInfo.set('5000mJ19', {tusen: 1055, multiplikator: 0.13, gange: 10, type: "run"});
+eventInfo.set('lengdeJ19', {tusen: 5.70, multiplikator: 2.1, gange: 100, type: "jump"});
+eventInfo.set('hogdeJ19', {tusen: 1.70, multiplikator: 7.5, gange: 100, type: "jump"});
+eventInfo.set('trestegJ19', {tusen: 12.60, multiplikator: 1, gange: 100, type: "jump"});
+eventInfo.set('stavJ19', {tusen: 3.40, attiprosent: 2.72, attipoeng: 728, multiplikatorOver: 2, multiplikator: 4, multiplikatorUnder: 8, type: "jump"});
+eventInfo.set('spydJ19', {tusen: 43.00, attiprosent: 34.40, attipoeng: 785, multiplikatorOver: 0.13, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
+eventInfo.set('diskosJ19', {tusen: 43.00, attiprosent: 34.40, attipoeng: 742, multiplikatorOver: 0.15, multiplikator: 0.3, multiplikatorUnder: 0.6, type: "throw"});
+eventInfo.set('kuleJ19', {tusen: 11.70, attiprosent: 9.36, attipoeng: 859, multiplikatorOver: 0.3, multiplikator: 0.6, multiplikatorUnder: 1.2, type: "throw"});
+eventInfo.set('sleggeJ19', {tusen: 48.00, attiprosent: 38.40, attipoeng: 760, multiplikatorOver: 0.12, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
 //G18
 eventInfo.set('100mG18', {tusen: 11.35, multiplikator: 1.7, gange: 100, type: "run"});
 eventInfo.set('200mG18', {tusen: 22.65, multiplikator: 0.85, gange: 100, type: "run"});
