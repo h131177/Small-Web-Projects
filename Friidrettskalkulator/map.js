@@ -1,5 +1,23 @@
 
 export const eventInfo = new Map();
+//G19
+eventInfo.set('100mG19', {tusen: 11.25, multiplikator: 1.7, gange: 100, type: "run"});
+eventInfo.set('200mG19', {tusen: 22.50, multiplikator: 0.85, gange: 100, type: "run"});
+eventInfo.set('110hkG19', {tusen: 15.00, multiplikator: 1, gange: 100, type: "run"});
+eventInfo.set('400hkG19', {tusen: 55.50, multiplikator: 0.34, gange: 100, type: "run"});
+eventInfo.set('400mG19', {tusen: 50.40, multiplikator: 0.4, gange: 100, type: "run"});
+eventInfo.set('800mG19', {tusen: 114, multiplikator: 1.8, gange: 10, type: "run"});
+eventInfo.set('1500mG19', {tusen: 240, multiplikator: 0.7, gange: 10, type: "run"});
+eventInfo.set('3000mG19', {tusen: 523, multiplikator: 0.27, gange: 10, type: "run"});
+eventInfo.set('5000mG19', {tusen: 910, multiplikator: 0.15, gange: 10, type: "run"});
+eventInfo.set('lengdeG19', {tusen: 6.95, multiplikator: 2, gange: 100, type: "jump"});
+eventInfo.set('hogdeG19', {tusen: 1.99, multiplikator: 7, gange: 100, type: "jump"});
+eventInfo.set('trestegG19', {tusen: 14.30, multiplikator: 1, gange: 100, type: "jump"});
+eventInfo.set('stavG19', {tusen: 4.50, attiprosent: 3.60, attipoeng: 685, multiplikatorOver: 1.7, multiplikator: 3.5, multiplikatorUnder: 7, type: "jump"});
+eventInfo.set('spydG19', {tusen: 62.00, attiprosent: 49.60, attipoeng: 752, multiplikatorOver: 0.1, multiplikator: 0.2, multiplikatorUnder: 0.4, type: "throw"});
+eventInfo.set('diskosG19', {tusen: 48.00, attiprosent: 38.40, attipoeng: 760, multiplikatorOver: 0.13, multiplikator: 0.25, multiplikatorUnder: 0.5, type: "throw"});
+eventInfo.set('kuleG19', {tusen: 15.20, attiprosent: 12.16, attipoeng: 817, multiplikatorOver: 0.3, multiplikator: 0.6, multiplikatorUnder: 1.2, type: "throw"});
+eventInfo.set('sleggeG19', {tusen: 62.00, attiprosent: 49.60, attipoeng: 752, multiplikatorOver: 0.1, multiplikator: 0.2, multiplikatorUnder: 0.4, type: "throw"});
 //G18
 eventInfo.set('100mG18', {tusen: 11.35, multiplikator: 1.7, gange: 100, type: "run"});
 eventInfo.set('200mG18', {tusen: 22.65, multiplikator: 0.85, gange: 100, type: "run"});
