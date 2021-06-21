@@ -2,6 +2,10 @@
     display: none;
 }
 
+.invalidInput {
+    border: red 2px solid;
+}
+
 body {
     background: steelblue;
     color: #fff;
