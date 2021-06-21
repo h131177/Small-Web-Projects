@@ -6,6 +6,10 @@
     border: red 2px solid;
 }
 
+[data-errorMessage] {
+    color: red;
+}
+
 body {
     background: steelblue;
     color: #fff;

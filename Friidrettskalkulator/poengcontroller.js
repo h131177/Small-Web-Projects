@@ -28,6 +28,7 @@ class PoengController {
             inputChooser.classList.add('invalidInput');
             invalidInput = true;
             this.rootElement.querySelector('[data-result]').classList.add("hidden");
+            this.rootElement.querySelector('[data-errorMessage]').classList.add("hidden");
         } else  {
             inputChooser.classList.remove('invalidInput');
         }
@@ -105,10 +106,14 @@ class PoengController {
             }
             
             console.log(points);
+            this.rootElement.querySelector('[data-points]').textContent = points;
+            this.rootElement.querySelector('[data-result]').classList.remove("hidden");
+            this.rootElement.querySelector('[data-errorMessage]').classList.add("hidden");
+        } else {
+            console.log("Øvelsen finnes ikkje for den aldersklassen.");
+            this.rootElement.querySelector('[data-errorMessage]').classList.remove("hidden");
         }
-        this.rootElement.querySelector('[data-points').textContent = points;
-
-        this.rootElement.querySelector('[data-result]').classList.remove("hidden");
+        
     }
 
     run() {
