@@ -10,6 +10,7 @@ class PoengController {
     }
 
     calculate(e) {
+        let invalidInput = false;
         const eventChooser = this.rootElement.querySelector('select');
         const event = eventChooser.value;
         this.rootElement.querySelector('[data-event]').textContent = event;
@@ -22,6 +23,18 @@ class PoengController {
         this.rootElement.querySelector('[data-class]').textContent = age;
 
         let points = 0;
+
+        if(input.trim() == "") {
+            inputChooser.classList.add('invalidInput');
+            invalidInput = true;
+            this.rootElement.querySelector('[data-result]').classList.add("hidden");
+        } else  {
+            inputChooser.classList.remove('invalidInput');
+        }
+
+        e.preventDefault();
+
+        if(invalidInput) return;
 
         if(eventInfo.has(event + age)) {
             let temp;
@@ -96,7 +109,6 @@ class PoengController {
         this.rootElement.querySelector('[data-points').textContent = points;
 
         this.rootElement.querySelector('[data-result]').classList.remove("hidden");
-        e.preventDefault();
     }
 
     run() {
