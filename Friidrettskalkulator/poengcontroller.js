@@ -112,6 +112,7 @@ class PoengController {
         } else {
             console.log("Øvelsen finnes ikkje for den aldersklassen.");
             this.rootElement.querySelector('[data-errorMessage]').classList.remove("hidden");
+            this.rootElement.querySelector('[data-result]').classList.add("hidden");
         }
         
     }
