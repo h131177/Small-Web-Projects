@@ -47,7 +47,11 @@ class PoengController {
                 for(let i = 0; i < tab.length; i++) {
                     tab[i] = parseInt(tab[i]);
                 }
-                input = tab[0]*60 + tab[1] + (tab[2]/100);
+                let hundreds = 0;
+                if(tab.length == 3) {
+                    hundreds = tab[2]/100;
+                }
+                input = tab[0]*60 + tab[1] + hundreds;
                 console.log(input);
             }
 
