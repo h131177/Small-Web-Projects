@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="poengcontroller.js" type="module"></script>
@@ -8,22 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friidrettskalkulator</title>
 </head>
+
 <body>
     <h1>Friidrettskalkulator</h1>
 
     <label for="age">Alder:</label>
-        <select data-age name="age" id="age">
-            <option value="G15">G15</option>
-            <option value="J15">J15</option>
-            <option value="G16">G16</option>
-            <option value="J16">J16</option>
-            <option value="G17">G17</option>
-            <option value="J17">J17</option>
-            <option value="G18">G18</option>
-            <option value="J18">J18</option>
-            <option value="G19">G19</option>
-            <option value="J19">J19</option>
-        </select>
+    <select data-age name="age" id="age">
+        <option value="G15">G15</option>
+        <option value="J15">J15</option>
+        <option value="G16">G16</option>
+        <option value="J16">J16</option>
+        <option value="G17">G17</option>
+        <option value="J17">J17</option>
+        <option value="G18">G18</option>
+        <option value="J18">J18</option>
+        <option value="G19">G19</option>
+        <option value="J19">J19</option>
+    </select>
 
     <div id="runRoot">
         <h2>Løp</h2>
@@ -45,11 +47,13 @@
             </select>
             <label for="runResult">Resultat:</label>
             <input type="text" name="runResult" id="runResult">
-            <span class="tooltip" data-tooltip="Bruk punktum og ikkje komma. Eks løp tilogmed 400m: 11.20 Eks løp over 400m: 2.05.30">?</span>
+            <span class="tooltip"
+                data-tooltip="Bruk punktum og ikkje komma. Eks løp tilogmed 400m: 11.20 Eks løp over 400m: 2.05.30">?</span>
             <button>Beregn</button>
         </form>
         <p data-result class="hidden">
-            Resultatet <span data-input></span> på distansen <span data-event></span> gir <span data-points></span> poeng i klassen <span data-class></span>
+            Resultatet <span data-input></span> på distansen <span data-event></span> gir <span data-points></span>
+            poeng i klassen <span data-class></span>
         </p>
         <p data-errorMessage class="hidden">Øvelsen finnes ikkje for den aldersklassen.</p>
     </div>
@@ -69,8 +73,11 @@
             <button>Beregn</button>
         </form>
         <p data-result class="hidden">
-            Resultatet <span data-input></span> i <span data-event></span> gir <span data-points></span> poeng i klassen <span data-class></span>
+            Resultatet <span data-input></span> i <span data-event></span> gir <span data-points></span> poeng i klassen
+            <span data-class></span>
         </p>
+        </p>
+        <p data-errorMessage class="hidden">Øvelsen finnes ikkje for den aldersklassen.</p>
     </div>
 
     <div id="throwRoot">
@@ -88,11 +95,15 @@
             <button>Beregn</button>
         </form>
         <p data-result class="hidden">
-            Resultatet <span data-input></span> i <span data-event></span> gir <span data-points></span> poeng i klassen <span data-class></span>
+            Resultatet <span data-input></span> i <span data-event></span> gir <span data-points></span> poeng i klassen
+            <span data-class></span>
         </p>
+        </p>
+        <p data-errorMessage class="hidden">Øvelsen finnes ikkje for den aldersklassen.</p>
     </div>
-    
+
     <br>
     <p><em>Sist oppdatert av Kjetil Stokke, 22.06.2021.</em></p>
 </body>
+
 </html>
