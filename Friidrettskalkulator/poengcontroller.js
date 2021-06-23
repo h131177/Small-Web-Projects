@@ -23,8 +23,9 @@ class PoengController {
         this.rootElement.querySelector('[data-class]').textContent = age;
 
         let points = 0;
+        const lettersRegExp = /[A-Za-zæøåÆØÅ]/;
 
-        if(input.trim() == "") {
+        if(input.trim() == "" || lettersRegExp.test(input)) {
             inputChooser.classList.add('invalidInput');
             invalidInput = true;
             this.rootElement.querySelector('[data-result]').classList.add("hidden");
