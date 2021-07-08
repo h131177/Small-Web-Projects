@@ -110,6 +110,9 @@ class PoengController {
                 points = Math.floor(points);
             }
             
+            if(points < 0) {
+                points = 0;
+            }
             console.log(points);
             this.rootElement.querySelector('[data-points]').textContent = points;
             this.rootElement.querySelector('[data-result]').classList.remove("hidden");
