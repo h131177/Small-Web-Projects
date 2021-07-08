@@ -12,7 +12,11 @@
 
 <body>
     <h1>Friidrettskalkulator</h1>
-
+    <div class="hint">
+        <span class="tooltip"
+        data-tooltip="Bruk punktum og ikkje komma. Eks løp tilogmed 400m: 11.20 Eks løp over 400m: 2.05.30">?</span>
+    </div>
+    
     <label for="age">Alder:</label>
     <select data-age name="age" id="age">
         <option value="G15">G15</option>
@@ -47,8 +51,6 @@
             </select>
             <label for="runResult">Resultat:</label>
             <input type="text" name="runResult" id="runResult">
-            <span class="tooltip"
-                data-tooltip="Bruk punktum og ikkje komma. Eks løp tilogmed 400m: 11.20 Eks løp over 400m: 2.05.30">?</span>
             <button>Beregn</button>
         </form>
         <p data-result class="hidden">
