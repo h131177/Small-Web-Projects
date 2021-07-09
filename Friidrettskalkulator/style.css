@@ -17,6 +17,10 @@ body {
     color: #fff;
 }
 
+h1 {
+    text-align: center;
+}
+
 form {
     position: relative;
     width: 100%;
@@ -118,5 +122,7 @@ form select {
 }
 
 @media screen and (min-width: 620px) {
-    
+    h1 {
+        text-align: left;
+    }
 }
