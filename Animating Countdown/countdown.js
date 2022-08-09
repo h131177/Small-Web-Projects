@@ -34,9 +34,10 @@ function startTimer(id, deadline) {
         if(timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59) animateClock(spans[0]);
 
         //check for end of timer
-        if(timer.total < 1) {
+        if(timer.total < 1 || !unchanged) {
             clearInterval(timerInterval);
             clock.innerHTML = '<span>0</span><span>0</span><span>0</span><span>0</span>';
+            unchanged = true;
         }
 
     }, 1000);
@@ -45,10 +46,17 @@ function startTimer(id, deadline) {
 function update() {
     const name = document.querySelector('.name');
     const span = document.querySelector('[data-name]');
+    const dateInput = document.querySelector('.dateInput')
+    console.log(dateInput.value);
+    const newDeadline = new Date(dateInput.value);
+    newDeadline.setHours(0);
+    unchanged = false;
+    startTimer("clock", newDeadline);
     span.textContent = name.value;
 }
 
-window.onload = function () {
+var unchanged = true;
+window.onload = function () {    
     const deadline = new Date("May 27, 2023 00:00:00");
     startTimer("clock", deadline);
     const saveButton = document.querySelector('.saveButton');
