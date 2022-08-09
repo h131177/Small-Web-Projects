@@ -42,7 +42,15 @@ function startTimer(id, deadline) {
     }, 1000);
 }
 
+function update() {
+    const name = document.querySelector('.name');
+    const span = document.querySelector('[data-name]');
+    span.textContent = name.value;
+}
+
 window.onload = function () {
     const deadline = new Date("May 27, 2023 00:00:00");
     startTimer("clock", deadline);
+    const saveButton = document.querySelector('.saveButton');
+    saveButton.addEventListener('click', update);
 }
