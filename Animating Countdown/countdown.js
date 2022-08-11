@@ -20,7 +20,7 @@ function startTimer(id, deadline) {
     const timerInterval = setInterval(function () {
         const clock = document.getElementById(id);
         const timer = updateTimer(deadline);
-        console.log("timer: " + timer.seconds);
+
         clock.innerHTML = '<span>' + timer.days + '</span>'
                         + '<span>' + timer.hours + '</span>'
                         + '<span>' + timer.minutes + '</span>'
@@ -37,9 +37,7 @@ function startTimer(id, deadline) {
         if(timer.total < 1 || !unchanged) {
             clearInterval(timerInterval);
             clock.innerHTML = '<span>0</span><span>0</span><span>0</span><span>0</span>';
-            console.log("unchanged: " + unchanged);
             unchanged = true;
-            console.log("clear: " + timer.total);
         }
 
     }, 1000);
@@ -59,7 +57,6 @@ function update() {
     }
     startTimer("clock", newDeadline);
     span.textContent = name.value;
-    console.log("Ny dato: " + newDeadline);
 }
 
 var unchanged = true;
