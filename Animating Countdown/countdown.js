@@ -61,7 +61,7 @@ function update() {
 
 var unchanged = true;
 window.onload = function () {    
-    const deadline = new Date("May 27, 2023 00:00:00");
+    const deadline = new Date("May 27, 2024 00:00:00");
     startTimer("clock", deadline);
     const saveButton = document.querySelector('.saveButton');
     saveButton.addEventListener('click', update);
